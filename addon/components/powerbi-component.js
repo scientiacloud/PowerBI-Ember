@@ -61,7 +61,7 @@ const PowerBiComponent = Ember.Component.extend({
       return false;
     }
 
-    if(this.validationMap.hasOwnProperty(options.type) && typeof this.validationMap[options.type] === "function") {
+    if(this.validationMap.hasOwnProperty(options.type) && typeof this.validationMap[options.type] === 'function') {
       return this.validationMap[options.type](options);
     }
     else {
